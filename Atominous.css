@@ -1,0 +1,92 @@
+/* CSS-Kommentare können verwendet werden, um den Code zu dokumentieren und zu erklären */
+
+/* Styling für den gesamten Körper (Body) der Webseite */
+body {
+    padding: 0; /* Kein Innenabstand */
+    margin: 0; /* Kein Außenabstand */
+    font-family: 'Anonymous pro', monospace; /* Verwendung der Schriftart 'Anonymous Pro' */
+    box-sizing: border-box; /* Berechnung des Gesamtbreite und -höhe einschließlich Padding und Border */
+}
+
+/* Styling für den heroischen Bereich */
+.hero {
+    height: 100vh; /* Die Höhe entspricht der gesamten Bildschirmhöhe */
+    width: 100%; /* Die Breite erstreckt sich über den gesamten verfügbaren Bereich */
+    background-image: url(textlogo.png); /* Hintergrundbild */
+    background-size: cover; /* Das Hintergrundbild passt sich der Größe des Containers an */
+    background-repeat: no-repeat; /* Das Hintergrundbild wird nicht wiederholt */
+    background-position: center; /* Das Hintergrundbild wird zentriert positioniert */
+}
+
+/* Styling für das Hintergrundvideo */
+.back-video {
+    position: absolute; /* Absolute Positionierung */
+    right: 0; /* Abstand vom rechten Rand */
+    bottom: 0; /* Abstand vom unteren Rand */
+    z-index: -1; /* Hintergrundebene, um es hinter anderen Elementen zu platzieren */
+}
+
+/* Medienabfrage für Bildschirme mit einem Seitenverhältnis von mindestens 16:9 */
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto; /* Automatische Breite */
+        height: 100%; /* Die Höhe entspricht der gesamten Bildschirmhöhe */
+    }
+}
+
+/* Navigationsbereich */
+nav {
+    display: flex; /* Flexbox-Layout */
+    align-items: center; /* Ausrichtung der Elemente vertikal zentriert */
+    justify-content: space-between; /* Gleicher Abstand zwischen den Elementen */
+    padding-top: 45px; /* Innenabstand oben */
+    padding-left: 8%; /* Innenabstand links */
+    padding-right: 8%; /* Innenabstand rechts */
+}
+
+/* Gemeinsames Styling für Navigationsbuttons */
+.button {
+    background-color: #fff; /* Hintergrundfarbe */
+    color: #2f123a; /* Textfarbe */
+}
+
+/* Styling für den Anmeldebutton */
+.button1 {
+    font-size: 18px; /* Schriftgröße */
+    text-decoration: none; /* Keine Unterstreichung */
+    border: 1px solid transparent; /* Transparenter Rand */
+    font-weight: bold; /* Fetter Text */
+    padding: 20px 20px; /* Innenabstand oben und unten, links und rechts */
+    border-radius: 35px; /* Abgerundete Ecken */
+    transition: transform 0.4s; /* Animationsübergang */
+    position: absolute; /* Absolute Positionierung */
+    right: 70px; /* Abstand vom rechten Rand */
+    top: 30px; /* Abstand vom oberen Rand */
+}
+
+/* Styling für den Angebotebutton */
+.button2 {
+    font-size: 23px; /* Schriftgröße */
+    text-decoration: none; /* Keine Unterstreichung */
+    border: 1px solid transparent; /* Transparenter Rand */
+    font-weight: bold; /* Fetter Text */
+    padding: 20px 20px; /* Innenabstand oben und unten, links und rechts */
+    border-radius: 35px; /* Abgerundete Ecken */
+    transition: transform 0.4s; /* Animationsübergang */
+    position: absolute; /* Absolute Positionierung */
+    bottom: 180px; /* Abstand vom unteren Rand */
+    left: 180px; /* Abstand vom linken Rand */
+}
+
+/* Styling für den Hover-Effekt der Buttons */
+.button:hover {
+    transform: scale(1.2); /* Vergrößern des Buttons beim Überfahren mit der Maus */
+}
+
+/* Styling für den Inhaltsbereich */
+.content {
+    position: absolute; /* Absolute Positionierung */
+    top: 50%; /* Oben auf 50% der Seite ausrichten */
+    left: 8%; /* Links um 8% der Seite verschieben */
+    transform: translateY(-50%); /* Vertikal zentrieren */
+}
